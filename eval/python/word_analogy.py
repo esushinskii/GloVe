@@ -69,10 +69,10 @@ def distance(W, vocab, ivocab, input_term):
 
 
 if __name__ == "__main__":
-    N = 100;          # number of closest words that will be shown
+    N = 10;          # number of closest words that will be shown
     W, vocab, ivocab = generate()
     while True:
-        input_term = raw_input("\nEnter three words (EXIT to break): ")
+        input_term = input("\nEnter three words (EXIT to break): ")
         if input_term == 'EXIT':
             break
         else:
